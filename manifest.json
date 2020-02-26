@@ -1,0 +1,32 @@
+{
+  "manifest_version": 2,
+  "name": "Line Cert",
+  "description": "Line Cert",
+  "version": "1.0",
+  "browser_action": {
+    "default_icon": "assets/icon/icon_32.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.line.me/oauth2/*"
+      ],
+      "css": [
+        "css/content.css"
+      ],
+      "js": [
+        "js/content.js"
+      ]
+    }
+  ],
+  "background": {
+    "scripts": [
+      "js/background.js"
+    ]
+  },
+  "permissions": [
+    "cookies",
+    "tabs",
+    "*://*.line.me/oauth2/*"
+  ]
+}
