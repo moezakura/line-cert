@@ -9,12 +9,14 @@ assets/line_accounts.jsonに以下の形式で保存。
     {
         "id": 255,
         "email": "aaa@example.com",
-        "password": "hogefuga"
+        "password": "hogefuga",
+        "cert": "xxxxx"
     },
     {
         "id": 65535,
         "email": "xxx@example.com",
-        "password": "hogehoge"
+        "password": "hogehoge",
+        "cert": "zzzzzz"
     }
 ]
 ```
